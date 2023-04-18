@@ -29,7 +29,16 @@
     "dev": "nodemon src/",
     "start": "node src/",
     "jest": "jest --forceExit",
-    "gen:secret": "node ./keys.js"
+    "gen:secret": "node ./keys.js",
+      "prod:start": "pm2 startOrRestart ecosystem.config.js --env production",
+    "prod:stop": "pm2 stop ecosystem.config.js",
+    "prod:restart": "pm2 reload ecosystem.config.js",
+    "dev:start": "nodemon src/index.js",
+    "dev:stop": "nodemon --stop",
+    "dev:restart": "nodemon --restart",
+    "prod:deploy": "npm install && pm2 startOrRestart ecosystem.config.js --env production",
+    "dev:deploy": "npm install && npm run dev:start",
+    "log:flush": "pm2 flush"
   },
   "standard": {
     "env": [
