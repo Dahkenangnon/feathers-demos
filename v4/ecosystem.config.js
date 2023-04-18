@@ -5,7 +5,7 @@ module.exports = {
         NODE_ENV: "development"
       },
       // auto restart
-      autorestart: true,
+     // autorestart: true,
       // application name (default to script filename without extension)
       name: 'ffapi',
   
@@ -25,7 +25,7 @@ module.exports = {
       args: 'start',
   
       // enable watch & restart feature, if a file change in the folder or subfolder, your app will get reloaded
-      watch: true,
+      //watch: true,
   
       // your app will be restarted if it exceeds the amount of memory specified. human-friendly format : it can be “10M”, “100K”, “2G” and so on…
       max_memory_restart: '250M',
@@ -43,6 +43,6 @@ module.exports = {
       //wait_ready: true,
   
       // Set a cron job to restart the app every day at 00:00
-      cron_restart: '0 0 * * *',
+     //cron_restart: '0 0 * * *',
     }]
   }
