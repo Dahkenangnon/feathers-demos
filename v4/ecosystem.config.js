@@ -7,7 +7,7 @@ module.exports = {
       // auto restart
       autorestart: true,
       // application name (default to script filename without extension)
-      name: 'ffapi5',
+      name: 'ffapi',
   
       // time
       time: true,
