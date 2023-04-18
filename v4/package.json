@@ -29,7 +29,7 @@
     "dev": "nodemon src/",
     "start": "node src/",
     "jest": "jest --forceExit",
-    "gen:secret": "node ./secret.js"
+    "gen:secret": "node ./keys.js"
   },
   "standard": {
     "env": [
